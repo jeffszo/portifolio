@@ -8,14 +8,8 @@ import { Contacts } from "./components/Contact";
 import "./styles/global.css";
 import "@radix-ui/themes/styles.css";
 import Fade from "react-reveal";
-import { useState } from "react";
-import { ThemeProvider } from "styled-components";
 
 export default function App() {
-  const [theme, setTheme] = useState('Light')
-  const themeToggler = () => {
-    theme === "light" ? setTheme('dark'): setTheme('light')
-  }
 
 
   return (
