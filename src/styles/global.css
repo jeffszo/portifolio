@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+/* Altere as cores e estilos conforme desejado */
+/* Barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+    height: 4px;
+  }
+  
+  /* Cor da barra de rolagem */
+  ::-webkit-scrollbar-thumb {
+    background-color: #657BCA; /* Cor da barra de rolagem */
+    border-radius: 30px; /* Borda arredondada */
+  }
+  
+  /* Cor de fundo da área da barra de rolagem */
+  ::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+  }
+  
+  /* Hover sobre a barra de rolagem */
+  /* ::-webkit-scrollbar-thumb:hover {
+    background-color: #ff8c66;
+  } */
+
+
+  
+  
