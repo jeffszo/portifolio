@@ -5,13 +5,15 @@
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
   color: inherit;
+
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-body{
+body {
+  width: 100%;
   background-color: #000814;
 }
 
@@ -20,22 +22,20 @@ body{
 /* Altere as cores e estilos conforme desejado */
 /* Barra de rolagem */
 ::-webkit-scrollbar {
-    width: 10px; /* Largura da barra de rolagem */
-    height: 4px;
-  }
-  
+  width: 10px;
+  /* Largura da barra de rolagem */
+  height: 4px;
+}
+
+/* Cor da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background-color: #657BCA;
   /* Cor da barra de rolagem */
-  ::-webkit-scrollbar-thumb {
-    background-color: #657BCA; /* Cor da barra de rolagem */
-    border-radius: 30px; /* Borda arredondada */
-  }
-  
-  /* Cor de fundo da área da barra de rolagem */
-  ::-webkit-scrollbar-track {
-    background-color: #f0f0f0;
-  }
+  border-radius: 30px;
+  /* Borda arredondada */
+}
 
-
-
-  
-  
+/* Cor de fundo da área da barra de rolagem */
+::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}

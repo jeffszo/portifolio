@@ -10,6 +10,7 @@ export function Projects() {
     <S.ContainerGeral>
       <S.ContainerText>
         <S.Title>Projects</S.Title>
+        <S.MouseHover>(Passe o mouse sobre a imagem *)</S.MouseHover>
       </S.ContainerText>
       <S.ContainerProjects>
         <S.Caixa>

@@ -84,9 +84,10 @@ export const ContainerTitle = styled.div`
 
 export const Title = styled.h1`
   font-family: "Poppins", sans-serif;
+  border-bottom: 2px solid #657bca;
   font-size: 1.6rem;
   font-weight: 500;
-  color: #03C988;
+  color:#657bca;
   
 
 
@@ -124,7 +125,7 @@ export const TitleEmpresa = styled.p`
 export const DescEmpresa = styled.li`
   color: #fff;
   font-family: "Poppins", sans-serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 300;
   opacity: 0.8;
   list-style: none;
@@ -144,7 +145,7 @@ export const DescEmpresa = styled.li`
 export const PeriodoEmpresa = styled.p`
   color: #fff ;
   font-family: "Poppins", sans-serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
   width: 50%;
 
   strong{

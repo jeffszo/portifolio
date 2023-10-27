@@ -3,9 +3,14 @@ import styled from "styled-components";
 export const ContainerGeral = styled.div`
   background-color: #000814;
   margin-bottom: 20rem;
+
+  
 `;
 
 export const ContainerText = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   margin: 0;
 `;
@@ -14,16 +19,27 @@ export const Title = styled.h1`
   font-size: 1.6rem;
   text-align: center;
   font-weight: 500;
-  color: #03c988;
+  color: #657bca;
+  border-bottom: 2px solid #657bca;
 `;
 
 export const ContainerProjects = styled.div`
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: row;
   align-items: center;
-  gap: 14rem;
-  margin: 1.5rem 0;
+  gap: 5rem;
+  margin: 3rem 0;
+
+  @media(max-width: 967px){
+    display: flex;
+    flex-direction: column;
+  }
+  @media(max-width: 481px){
+    display: flex;
+    flex-direction: column;
+  }
+
 `;
 
 export const NameProject = styled.h3`
@@ -45,16 +61,18 @@ export const Caixa = styled.div`
 `;
 
 export const ImgProject = styled.img`
+  cursor: pointer;
   border-radius: 5px;
-  width: 40rem;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  width: 20rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
   @media (max-width: 970px) {
-    width: 30rem;
+    width: 20rem;
   }
 
-  @media (max-width: 480px) {
-    width: 20rem;
+  @media (max-width: 391px) {
+    width: 17rem;
   }
 `;
 
@@ -70,9 +88,9 @@ export const LinkProject = styled.a`
     props.backgroundColor ? props.backgroundColor : "white"};
   display: flex;
   justify-content: center;
-  margin: 1rem 0 0 0;
+  margin: 1rem 1.4rem;
   gap: 5px;
-  border-radius: 15px;
+  border-radius: 5px;
   color: #fff;
   padding: 0.6rem 1.2rem;
   cursor: pointer;
@@ -81,4 +99,15 @@ export const LinkProject = styled.a`
     opacity: 0.8;
     transition: all ease-in-out 0.2s;
   }
+
+  @media(max-width: 391px){
+    margin: 1rem 0;
+    padding: 0.6rem 0.8rem;
+  }
+`;
+
+export const MouseHover = styled.span`
+  opacity: 0.7;
+  color: #fff;
+  margin-top: 0.8rem;
 `;

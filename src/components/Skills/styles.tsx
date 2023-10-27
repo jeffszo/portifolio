@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import { FaReact, FaFigma, FaSass, FaGitAlt } from "react-icons/fa";
-import { IoLogoCss3, IoLogoJavascript } from "react-icons/io";
+import { IoLogoCss3 } from "react-icons/io";
 import { TfiHtml5 } from "react-icons/tfi";
 import { SiStyledcomponents } from "react-icons/si";
+import { DiJavascript } from "react-icons/di";
 
 export const Container = styled.div`
   background-color: #000814;
@@ -13,14 +14,31 @@ export const ContainerIcon = styled.div`
   box-shadow: rgba(0, 0, 0, 0.9) 0px 3px 8px;
   padding: 1rem 0;
   margin: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 767px) {
+    height: 7rem;
+    width: 5.5rem;
+  }
+
+  @media (max-width: 510px) {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  @media (max-width: 391px) {
+    margin: 0.4rem;
+  }
 `;
 
 export const React = styled(FaReact)`
+  color: #61dafb;
   font-size: 5rem;
   margin: 1rem 2.5rem;
 
   transition: all 0.5s ease;
-  color: #61dafb;
 
   &:hover {
     transform: translateY(-5px);
@@ -28,11 +46,11 @@ export const React = styled(FaReact)`
 
   @media (max-width: 767px) {
     font-size: 4rem;
-    margin: 1rem 0.8rem;
+    margin: 1rem 0;
   }
 
-  @media (max-width: 375px) {
-    font-size: 3.12rem;
+  @media (max-width: 510px) {
+    font-size: 2rem;
   }
 `;
 
@@ -49,11 +67,11 @@ export const Figma = styled(FaFigma)`
 
   @media (max-width: 767px) {
     font-size: 4rem;
-    margin: 1rem 0.8rem;
+    margin: 1rem 0;
   }
 
-  @media (max-width: 375px) {
-    font-size: 3.12rem;
+  @media (max-width: 510px) {
+    font-size: 2rem;
   }
 `;
 
@@ -70,11 +88,11 @@ export const Sass = styled(FaSass)`
 
   @media (max-width: 767px) {
     font-size: 4rem;
-    margin: 1rem 0.8rem;
+    margin: 1rem 0;
   }
 
-  @media (max-width: 375px) {
-    font-size: 3.12rem;
+  @media (max-width: 510px) {
+    font-size: 2rem;
   }
 `;
 
@@ -91,11 +109,11 @@ export const Git = styled(FaGitAlt)`
 
   @media (max-width: 767px) {
     font-size: 4rem;
-    margin: 1rem 0.8rem;
+    margin: 1rem 0;
   }
 
-  @media (max-width: 375px) {
-    font-size: 3.12rem;
+  @media (max-width: 510px) {
+    font-size: 2rem;
   }
 `;
 
@@ -111,14 +129,14 @@ export const Css = styled(IoLogoCss3)`
   }
   @media (max-width: 767px) {
     font-size: 4rem;
-    margin: 1rem 0.8rem;
+    margin: 1rem 0;
   }
 
-  @media (max-width: 375px) {
-    font-size: 3.12rem;
+  @media (max-width: 510px) {
+    font-size: 2rem;
   }
 `;
-export const Javascript = styled(IoLogoJavascript)`
+export const Javascript = styled(DiJavascript)`
   font-size: 5rem;
   margin: 1rem 2.5rem;
 
@@ -131,11 +149,11 @@ export const Javascript = styled(IoLogoJavascript)`
 
   @media (max-width: 767px) {
     font-size: 4rem;
-    margin: 1rem 0.8rem;
+    margin: 1rem 0;
   }
 
-  @media (max-width: 375px) {
-    font-size: 3.12rem;
+  @media (max-width: 510px) {
+    font-size: 2rem;
   }
 `;
 export const Html = styled(TfiHtml5)`
@@ -151,11 +169,10 @@ export const Html = styled(TfiHtml5)`
 
   @media (max-width: 767px) {
     font-size: 4rem;
-    margin: 1rem 0.8rem;
+    margin: 1rem 0;
   }
-
-  @media (max-width: 375px) {
-    font-size: 3.12rem;
+  @media (max-width: 510px) {
+    font-size: 2rem;
   }
 `;
 
@@ -170,13 +187,13 @@ export const Styled = styled(SiStyledcomponents)`
     transform: translateY(-5px);
   }
 
-  @media (max-width: 767px) {
-    font-size: 4rem;
-    margin: 1rem 0.8rem;
+  @media (max-width: 510px) {
+    font-size: 2rem;
   }
 
-  @media (max-width: 375px) {
-    font-size: 3.12rem;
+  @media (max-width: 767px) {
+    font-size: 4rem;
+    margin: 1rem 0;
   }
 `;
 
@@ -192,13 +209,16 @@ export const ContainerGeral = styled.div`
 
 export const ContainerOne = styled.div`
   display: flex;
-  justify-content: center;
+  gap: 10re;
   margin: 0 0 2rem 0;
 
   @media (max-width: 767px) {
     display: flex;
     align-items: center;
-    margin: 0 0 2rem 0;
+  }
+
+  @media (max-width: 510px) {
+    margin: 1rem;
   }
 `;
 
@@ -217,7 +237,7 @@ export const Title = styled.h1`
   font-family: "Poppins", sans-serif;
   text-align: center;
   font-weight: 500;
-  color: #03C988;
+  color: #657bca;
   margin: 0 0 2rem 0;
 
   @media (max-width: 767px) {

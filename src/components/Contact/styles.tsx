@@ -4,6 +4,7 @@ export const Container = styled.div`
   width: 100%;
   background-color: #000814;
   margin: 0;
+  overflow-x: hidden;
 `;
 
 export const Title = styled.h1`
@@ -11,14 +12,14 @@ export const Title = styled.h1`
   font-size: 1.6rem;
   font-weight: 500;
   text-align: center;
-  color: #03C988;
+  color: #657bca;
 `;
 
 export const Subtitle = styled.h3`
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 300;
   opacity: 0.7;
-  margin-top: 0.1rem;
   text-align: center;
   color: #fff;
 `;
@@ -27,7 +28,6 @@ export const ContainerForm = styled.div`
   margin-top: 1rem;
   display: flex;
   justify-content: center;
-
 `;
 
 export const Form = styled.form`
@@ -36,8 +36,8 @@ export const Form = styled.form`
 `;
 
 export const Label = styled.label`
+  color: #fff;
   font-family: "Poppins", sans-serif;
-
 `;
 
 export const Input = styled.input`
@@ -50,12 +50,11 @@ export const Input = styled.input`
   padding-left: 0.3rem;
   margin-bottom: 1rem;
 
-
-  @media (max-width: 767px){
+  @media (max-width: 767px) {
     width: 20rem;
   }
 
-  @media (max-width: 367px){
+  @media (max-width: 367px) {
     width: 15rem;
   }
 `;
@@ -70,11 +69,11 @@ export const Descricao = styled.textarea`
   background-color: #ede7f6;
   resize: none;
 
-  @media (max-width: 767px){
+  @media (max-width: 767px) {
     width: 20rem;
   }
 
-  @media (max-width: 367px){
+  @media (max-width: 367px) {
     width: 15rem;
   }
 `;
@@ -83,7 +82,6 @@ export const ContainerBtnForm = styled.div`
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
-
 `;
 
 export const BtnForm = styled.button`
@@ -97,4 +95,4 @@ export const BtnForm = styled.button`
   height: 3rem;
   width: 200px;
   cursor: pointer;
-`
+`;

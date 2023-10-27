@@ -1,10 +1,11 @@
-import { Container, Lista, ItemLista, Menu, MoodDark } from "./styles";
+import { Container, Lista, ItemLista, Menu, ListaTwo} from "./styles";
 
 export function Header() {
 
-
+  
 
   return (
+    
     <Container>
 
       <Lista>
@@ -15,10 +16,9 @@ export function Header() {
         <ItemLista>Projects</ItemLista>
         <ItemLista>Contacts</ItemLista>
       </Lista>
-      <Lista>
-        <MoodDark />
+      <ListaTwo>
         <Menu />
-      </Lista>
+      </ListaTwo>
     </Container>
   );
 }
