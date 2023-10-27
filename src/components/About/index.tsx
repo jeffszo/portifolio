@@ -1,5 +1,4 @@
 import * as S from "./styles.tsx";
-import { BsFillBalloonHeartFill } from "react-icons/bs";
 
 export function About() {
   return (
@@ -7,13 +6,9 @@ export function About() {
       <S.AboutTitle>About</S.AboutTitle>
 
       <S.AboutDesc>
-        I develop responsive, visually pleasing and performant websites
-        
-        <BsFillBalloonHeartFill
-          style={{
-            fontSize: 25,
-          }}
-        ></BsFillBalloonHeartFill>
+        I develop responsive, visually pleasing and high-performance websites.
+        Furthermore, I am studying Systems Analysis and Development in the third
+        semester.
       </S.AboutDesc>
     </S.Container>
   );

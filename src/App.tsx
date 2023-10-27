@@ -6,7 +6,6 @@ import { Experience } from "./components/Experience";
 import { Projects } from "./components/Projects";
 import { Contacts } from "./components/Contact";
 import "./styles/global.css";
-import "@radix-ui/themes/styles.css";
 import Fade from "react-reveal";
 
 export default function App() {

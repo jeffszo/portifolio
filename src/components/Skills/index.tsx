@@ -1,123 +1,59 @@
-import { ContainerOne, ContainerTwo, Title } from "./styles.tsx";
-import { FaReact, FaFigma, FaSass, FaGitAlt } from "react-icons/fa";
-import { IoLogoCss3, IoLogoJavascript } from "react-icons/io";
-import { TfiHtml5 } from "react-icons/tfi";
-import { SiStyledcomponents } from "react-icons/si";
+import * as S from "./styles.js";
+
 import Fade from "react-reveal";
 
 export function Skills() {
   return (
-    <div>
-      <div>
-        <Fade delay={15000}>
-          <Title
-            style={{
-              marginTop: 350,
-              marginBottom: 35,
-            }}
-          >
-            Skills
-          </Title>
-        </Fade>
+    <S.Container>
+      <S.Title>Tools</S.Title>
+      <S.ContainerGeral>
+        <Fade delay={15000}></Fade>
+        <S.ContainerOne>
+          <Fade delay={15000} top>
+            <S.ContainerIcon>
+              <S.Html />
+            </S.ContainerIcon>
+          </Fade>
+          <Fade delay={15000} top>
+            <S.ContainerIcon>
+              <S.Css />
+            </S.ContainerIcon>
+          </Fade>
+          <Fade delay={15000} top>
+            <S.ContainerIcon>
+              <S.Javascript />
+            </S.ContainerIcon>
+          </Fade>
+          <Fade delay={15000} top>
+            <S.ContainerIcon>
+              <S.React />
+            </S.ContainerIcon>
+          </Fade>
+        </S.ContainerOne>
 
-        <ContainerOne>
+        <S.ContainerTwo>
           <Fade delay={15000} top>
-            <TfiHtml5
-              style={{
-                fontSize: 70,
-                marginRight: 80,
-                paddingLeft: 10,
-                cursor: "pointer",
-                color: "#000",
-              }}
-            ></TfiHtml5>
+            <S.ContainerIcon>
+              <S.Figma />
+            </S.ContainerIcon>
           </Fade>
           <Fade delay={15000} top>
-            <IoLogoCss3
-              style={{
-                fontSize: 70,
-                marginRight: 80,
-                paddingLeft: 10,
-                cursor: "pointer",
-                color: "#000",
-              }}
-            ></IoLogoCss3>
+            <S.ContainerIcon>
+              <S.Styled />
+            </S.ContainerIcon>
           </Fade>
           <Fade delay={15000} top>
-            <IoLogoJavascript
-              style={{
-                fontSize: 70,
-                marginRight: 80,
-                paddingLeft: 10,
-                cursor: "pointer",
-                color: "#000",
-              }}
-            ></IoLogoJavascript>
+            <S.ContainerIcon>
+              <S.Sass />
+            </S.ContainerIcon>
           </Fade>
           <Fade delay={15000} top>
-            <FaReact
-              style={{
-                fontSize: 70,
-                marginRight: 80,
-                paddingLeft: 10,
-                cursor: "pointer",
-                color: "#000",
-              }}
-            />
+            <S.ContainerIcon>
+              <S.Git />
+            </S.ContainerIcon>
           </Fade>
-        </ContainerOne>
-
-        <ContainerTwo
-          style={{
-            marginTop: 45,
-          }}
-        >
-          <Fade delay={15000} top>
-            <FaFigma
-              style={{
-                fontSize: 70,
-                marginRight: 80,
-                paddingLeft: 10,
-                cursor: "pointer",
-                color: "#000",
-              }}
-            />
-          </Fade>
-          <Fade delay={15000} top>
-            <SiStyledcomponents
-              style={{
-                fontSize: 70,
-                marginRight: 80,
-                paddingLeft: 10,
-                cursor: "pointer",
-                color: "#000",
-              }}
-            />
-          </Fade>
-          <Fade delay={15000} top>
-            <FaSass
-              style={{
-                fontSize: 70,
-                marginRight: 80,
-                paddingLeft: 10,
-                cursor: "pointer",
-                color: "#000",
-              }}
-            ></FaSass>
-          </Fade>
-          <Fade delay={15000} top>
-            <FaGitAlt
-              style={{
-                fontSize: 70,
-                marginRight: 80,
-                paddingLeft: 10,
-                cursor: "pointer",
-                color: "#000",
-              }}
-            />
-          </Fade>
-        </ContainerTwo>
-      </div>
-    </div>
+        </S.ContainerTwo>
+      </S.ContainerGeral>
+    </S.Container>
   );
 }
