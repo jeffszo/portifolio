@@ -1,6 +1,6 @@
 import * as S from "./styles";
 import Dotted from "../../../assets/Dotted.png";
-// import Fade from "react-reveal";
+
 
 export function Home() {
   return (

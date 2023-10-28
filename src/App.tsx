@@ -6,22 +6,19 @@ import { Experience } from "./components/Experience";
 import { Projects } from "./components/Projects";
 import { Contacts } from "./components/Contact";
 import "./styles/global.css";
-import Fade from "react-reveal";
+
 
 export default function App() {
-
-
   return (
-    <div className="scrollable-container">
+    <>
       <Header></Header>
       <Home></Home>
       <About></About>
-      <Fade delay={5000}>
-        <Skills></Skills>
-        <Experience></Experience>
-        <Projects></Projects>
-        <Contacts></Contacts>
-      </Fade>
-    </div>
+      <Skills></Skills>
+      <Experience></Experience>
+      <Projects></Projects>
+
+      <Contacts></Contacts>
+    </>
   );
 }
