@@ -17,9 +17,20 @@ export const ContainerText = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-`
 
+  @media (max-width: 466px) {
+    align-items: center;
+  }
 
+  @media (max-width: 391px) {
+    align-items: center;
+  }
+
+  @media (max-width: 307px) {
+    align-items: center;
+  }
+  
+`;
 
 export const ContainerDotted = styled.div`
   display: flex;
@@ -33,8 +44,8 @@ export const ContainerDotted = styled.div`
 `;
 
 export const ContainerDottedTwo = styled.div`
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
   position: absolute;
   left: 80px;
 
@@ -120,7 +131,6 @@ export const TitleDesc = styled.p`
   line-height: 1.1;
   color: #fff;
 
-
   @media (max-width: 767px) {
     font-size: 1.1rem;
   }
@@ -149,10 +159,20 @@ export const Describe = styled.p`
     margin: 0;
   }
 
-  @media (max-width: 391px) {
+  @media (max-width: 463px) {
     font-size: 2rem;
-    margin: 0 0 1rem 0;
   }
+  @media (max-width: 391px) {
+    font-size: 1.7rem;
+    margin: 0 0 1rem 0;
+
+  }
+
+  
+  @media (max-width: 307px) {
+    font-size: 1.4rem;
+  }
+  
 `;
 
 export const ContainerRedes = styled.div`

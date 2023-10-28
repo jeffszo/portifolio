@@ -11,7 +11,7 @@ export const Container = styled.div`
   background-color: #000814;
   margin-top: 1rem;
 
-  @media (max-width: 767px) {
+  @media (max-width: 910px) {
     display: flex;
     justify-content: end;
     align-items: start;
@@ -25,7 +25,7 @@ export const Lista = styled.ul`
   align-items: center;
   padding: 1rem 0;
 
-  @media (max-width: 767px) {
+  @media (max-width: 910px) {
     display: none;
   }
 `;
