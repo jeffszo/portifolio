@@ -3,8 +3,6 @@ import styled from "styled-components";
 export const ContainerGeral = styled.div`
   background-color: #000814;
   margin-bottom: 20rem;
-
-  
 `;
 
 export const ContainerText = styled.div`
@@ -20,7 +18,10 @@ export const Title = styled.h1`
   text-align: center;
   font-weight: 500;
   color: #657bca;
-  border-bottom: 2px solid #657bca;
+
+  @media (max-width: 910px) {
+    margin: 0 0 -3rem 1.4rem;
+  }
 `;
 
 export const ContainerProjects = styled.div`
@@ -31,15 +32,14 @@ export const ContainerProjects = styled.div`
   gap: 5rem;
   margin: 3rem 0;
 
-  @media(max-width: 967px){
+  @media (max-width: 967px) {
     display: flex;
     flex-direction: column;
   }
-  @media(max-width: 481px){
+  @media (max-width: 481px) {
     display: flex;
     flex-direction: column;
   }
-
 `;
 
 export const NameProject = styled.h3`
@@ -100,7 +100,7 @@ export const LinkProject = styled.a`
     transition: all ease-in-out 0.2s;
   }
 
-  @media(max-width: 391px){
+  @media (max-width: 391px) {
     margin: 1rem 0;
     padding: 0.6rem 0.8rem;
   }
@@ -109,5 +109,12 @@ export const LinkProject = styled.a`
 export const MouseHover = styled.span`
   opacity: 0.7;
   color: #fff;
-  margin-top: 0.8rem;
+
+  @media (max-width: 910px) {
+    display: none;
+  }
+
+  @media (max-width: 391px) {
+    display: none;
+  }
 `;

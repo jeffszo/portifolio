@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100%;
+  display: flex;
+  flex-direction: column;
   background-color: #000814;
   margin: 0;
   overflow-x: hidden;
@@ -13,6 +14,7 @@ export const Title = styled.h1`
   font-weight: 500;
   text-align: center;
   color: #657bca;
+
 `;
 
 export const Subtitle = styled.h3`

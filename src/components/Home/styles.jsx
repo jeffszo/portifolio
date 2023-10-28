@@ -119,11 +119,10 @@ export const TitleDesc = styled.p`
   font-size: 1.3rem;
   line-height: 1.1;
   color: #fff;
-  opacity: 0.7;
+
 
   @media (max-width: 767px) {
     font-size: 1.1rem;
-
   }
 
   @media (max-width: 395px) {
@@ -140,7 +139,7 @@ export const ContainerDescribe = styled.div`
 export const Describe = styled.p`
   font-family: "Poppins", sans-serif;
   color: #fff;
-  opacity: 0.7;
+
   font-size: 4rem;
   margin: 0;
 

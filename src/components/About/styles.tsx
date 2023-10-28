@@ -11,7 +11,6 @@ export const Container = styled.div`
 
 export const AboutTitle = styled.h1`
   font-family: "Poppins", sans-serif;
-  border-bottom: 2px solid #657bca;
   font-weight: 500;
   font-size: 1.6rem;
   color: #657bca;
