@@ -67,7 +67,7 @@ export const Link = styled.a`
 export const Linkedin = styled(BsLinkedin)`
   cursor: pointer;
   font-size: 35px;
-  color: #003566;
+  color: #224ccc;
   @media (max-width: 391px) {
     font-size: 30px;
   }

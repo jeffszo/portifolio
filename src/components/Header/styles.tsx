@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { RiMenu4Line } from "react-icons/ri";
+// import { RiMenu4Line } from "react-icons/ri";
 // import { MdDarkMode } from "react-icons/md";
 
 export const Container = styled.div`
@@ -31,10 +31,15 @@ export const Lista = styled.ul`
 `;
 
 export const ListaTwo = styled.div`
-  display: flex;
+  display: none;
   justify-content: end;
 
-`
+  @media (max-width: 967px) {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+`;
 
 export const ItemLista = styled.li`
   font-family: "Poppins", sans-serif;
@@ -49,21 +54,40 @@ export const ItemLista = styled.li`
   list-style-type: none;
   margin: 0 45px 0 0;
 
-  @media (max-width: 767px) {
+  @media (max-width: 967px) {
     display: none;
   }
 `;
 
-export const Menu = styled(RiMenu4Line)`
-  font-size: 45px;
-  display: none;
+export const ItemListaTwo = styled.li`
+  font-family: "Poppins", sans-serif;
   color: #fff;
+  opacity: 0.7;
+  cursor: pointer;
+  &:hover {
+    color: #657bca;
+    transition: 0.2s;
+    opacity: 0.9;
+  }
+  list-style-type: none;
+  margin: 0 45px 0 0;
 
   @media (max-width: 967px) {
-    margin: 0 1rem;
     display: block;
   }
 `;
+
+// export const Menu = styled(RiMenu4Line)`
+//   font-size: 45px;
+//   display: block;
+//   color: #fff;
+//   cursor: pointer;
+
+//   @media (max-width: 967px) {
+//     margin: 0 1rem;
+
+//   }
+// `;
 
 // export const MoodDark = styled(MdDarkMode)`
 //   font-size: 30px;

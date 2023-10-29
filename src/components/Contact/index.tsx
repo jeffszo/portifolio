@@ -16,7 +16,7 @@ export function Contacts() {
   return (
     <S.Container>
       <S.Title>Contacts</S.Title>
-      <S.Subtitle>Entre em contato comigo!</S.Subtitle>
+      <S.Subtitle>Contact me</S.Subtitle>
       <S.ContainerForm>
         <S.Form>
           <S.Label>Nome:</S.Label>
