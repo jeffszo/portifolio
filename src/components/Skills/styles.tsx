@@ -29,6 +29,8 @@ export const ContainerIcon = styled.div`
   }
 
   @media (max-width: 391px) {
+    height: 4.4rem;
+    width: 4.8rem;
     margin: 0.4rem;
   }
 `;
@@ -45,7 +47,7 @@ export const React = styled(FaReact)`
   }
 
   @media (max-width: 767px) {
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 1rem 0;
   }
 
@@ -66,7 +68,7 @@ export const Figma = styled(FaFigma)`
   }
 
   @media (max-width: 767px) {
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 1rem 0;
   }
 
@@ -87,7 +89,7 @@ export const Sass = styled(FaSass)`
   }
 
   @media (max-width: 767px) {
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 1rem 0;
   }
 
@@ -108,7 +110,7 @@ export const Git = styled(FaGitAlt)`
   }
 
   @media (max-width: 767px) {
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 1rem 0;
   }
 
@@ -128,7 +130,7 @@ export const Css = styled(IoLogoCss3)`
     transform: translateY(-5px);
   }
   @media (max-width: 767px) {
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 1rem 0;
   }
 
@@ -148,7 +150,7 @@ export const Javascript = styled(DiJavascript)`
   }
 
   @media (max-width: 767px) {
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 1rem 0;
   }
 
@@ -168,7 +170,7 @@ export const Html = styled(TfiHtml5)`
   }
 
   @media (max-width: 767px) {
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 1rem 0;
   }
   @media (max-width: 510px) {
@@ -192,7 +194,7 @@ export const Styled = styled(SiStyledcomponents)`
   }
 
   @media (max-width: 767px) {
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 1rem 0;
   }
 `;
@@ -229,6 +231,7 @@ export const ContainerTwo = styled.div`
   @media (max-width: 767px) {
     display: flex;
     align-items: center;
+    margin: 2rem 0 0 0;
   }
 `;
 

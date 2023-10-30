@@ -136,7 +136,7 @@ export const TitleDesc = styled.p`
   }
 
   @media (max-width: 395px) {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 `;
 
@@ -163,7 +163,7 @@ export const Describe = styled.p`
     font-size: 2rem;
   }
   @media (max-width: 391px) {
-    font-size: 1.7rem;
+    font-size: 2rem;
     margin: 0 0 1rem 0;
 
   }

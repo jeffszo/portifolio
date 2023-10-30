@@ -76,6 +76,7 @@ export const ItemListaTwo = styled.a`
 
   @media (max-width: 967px) {
     display: block;
+    margin: 0 1rem;
   }
 `;
 
