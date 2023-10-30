@@ -10,7 +10,8 @@ export function Experience() {
         <S.TitleEmpresa>Mitikas - Information Technology</S.TitleEmpresa>
         <S.DescEmpresa>
           Responsible for creating mobile applications with React Native.
-          Furthermore, in web development I used HTML, CSS and JavaScript.
+          Furthermore, in web development I used HTML, CSS, JavaScript,
+          Bootstrap, PHP and MySQL.
           <S.ContainerIcons>
             <S.Html />
             <S.Css />

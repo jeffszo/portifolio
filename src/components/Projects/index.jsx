@@ -10,7 +10,7 @@ export function Projects() {
     <S.ContainerGeral id="projects">
       <S.ContainerText>
         <S.Title>Projects</S.Title>
-        <S.MouseHover>(Passe o mouse sobre a imagem *)</S.MouseHover>
+        <S.MouseHover>(Hover over the image *)</S.MouseHover>
       </S.ContainerText>
       <S.ContainerProjects>
         <S.Caixa>
@@ -23,7 +23,7 @@ export function Projects() {
           <S.ContainerLinks>
             <S.LinkProject backgroundColor="black">
               <BsGithub size={26} />
-              código
+              code
             </S.LinkProject>
             <S.LinkProject backgroundColor="#657bca">
               <GrDeploy size={26} />
@@ -37,7 +37,7 @@ export function Projects() {
             <a target="blank" href="https://github.com/jeffszo/joker">
               <S.LinkProject backgroundColor="black">
                 <BsGithub size={26} />
-                código
+                code
               </S.LinkProject>
             </a>
             <a target="blank" href="https://joker-wheat.vercel.app/">
@@ -54,7 +54,7 @@ export function Projects() {
             <a target="blank" href="https://github.com/jeffszo/joker">
               <S.LinkProject backgroundColor="black">
                 <BsGithub size={26} />
-                código
+                code
               </S.LinkProject>
             </a>
             <a target="blank" href="https://joker-wheat.vercel.app/">

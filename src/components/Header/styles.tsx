@@ -6,17 +6,19 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+
   overflow-x: hidden;
   background-color: #000814;
   margin-top: 1rem;
 
   @media (max-width: 910px) {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: start;
     padding: 1rem 0;
   }
+
+
 `;
 
 export const Lista = styled.ul`
@@ -32,7 +34,6 @@ export const Lista = styled.ul`
 
 export const ListaTwo = styled.div`
   display: none;
-
   justify-content: end;
 
   @media (max-width: 967px) {
@@ -65,6 +66,7 @@ export const ItemListaTwo = styled.a`
   font-family: "Poppins", sans-serif;
   color: #fff;
   opacity: 0.7;
+  display: none;
   cursor: pointer;
   &:hover {
     color: #657bca;
