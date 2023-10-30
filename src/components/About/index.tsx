@@ -3,7 +3,7 @@ import * as S from "./styles.tsx";
 
 export function About() {
   return (
-      <S.Container>
+      <S.Container id="about">
         <S.AboutTitle>About</S.AboutTitle>
         <S.AboutDesc>
           I develop responsive, visually pleasing and high-performance

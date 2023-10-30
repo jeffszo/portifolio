@@ -7,7 +7,7 @@ import { GrDeploy } from "react-icons/gr";
 
 export function Projects() {
   return (
-    <S.ContainerGeral>
+    <S.ContainerGeral id="projects">
       <S.ContainerText>
         <S.Title>Projects</S.Title>
         <S.MouseHover>(Passe o mouse sobre a imagem *)</S.MouseHover>

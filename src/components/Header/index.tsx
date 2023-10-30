@@ -23,22 +23,23 @@ export function Header() {
   return (
     <Container>
       <Lista>
-        <ItemLista>Home</ItemLista>
-        <ItemLista>About</ItemLista>
-        <ItemLista>Experience</ItemLista>
-        <ItemLista>Tools</ItemLista>
-        <ItemLista>Projects</ItemLista>
-        <ItemLista>Contacts</ItemLista>
+        <ItemLista href="#home">Home</ItemLista>
+        <ItemLista href="#about">About</ItemLista>
+        <ItemLista href="#experience">Experience</ItemLista>
+        <ItemLista href="#tools">Tools</ItemLista>
+        <ItemLista href="#projects">Projects</ItemLista>
+        <ItemLista href="#contacts">Contacts</ItemLista>
       </Lista>
       <ListaTwo>
         <ItemListaTwo onClick={toggleMenu}>{MenuIcon}</ItemListaTwo>
         {isOpen && (
           <>
-            <ItemListaTwo>About</ItemListaTwo>
-            <ItemListaTwo>Experience</ItemListaTwo>
-            <ItemListaTwo>Tools</ItemListaTwo>
-            <ItemListaTwo>Projects</ItemListaTwo>
-            <ItemListaTwo>Contacts</ItemListaTwo>
+        <ItemListaTwo href="#home">Home</ItemListaTwo>
+        <ItemListaTwo href="#about">About</ItemListaTwo>
+        <ItemListaTwo href="#experience">Experience</ItemListaTwo>
+        <ItemListaTwo href="#tools">Tools</ItemListaTwo>
+        <ItemListaTwo href="#projects">Projects</ItemListaTwo>
+        <ItemListaTwo href="#contacts">Contacts</ItemListaTwo>
           </>
         )}
       </ListaTwo>

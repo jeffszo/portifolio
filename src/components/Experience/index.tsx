@@ -2,7 +2,7 @@ import * as S from "./styles.jsx";
 
 export function Experience() {
   return (
-    <S.ContainerGeral>
+    <S.ContainerGeral id="experience">
       <S.ContainerTitle>
         <S.Title>Experience</S.Title>
       </S.ContainerTitle>

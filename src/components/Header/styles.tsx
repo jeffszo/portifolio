@@ -32,16 +32,18 @@ export const Lista = styled.ul`
 
 export const ListaTwo = styled.div`
   display: none;
+
   justify-content: end;
 
   @media (max-width: 967px) {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    background-color: #00081430;
   }
 `;
 
-export const ItemLista = styled.li`
+export const ItemLista = styled.a`
   font-family: "Poppins", sans-serif;
   color: #fff;
   opacity: 0.7;
@@ -59,7 +61,7 @@ export const ItemLista = styled.li`
   }
 `;
 
-export const ItemListaTwo = styled.li`
+export const ItemListaTwo = styled.a`
   font-family: "Poppins", sans-serif;
   color: #fff;
   opacity: 0.7;

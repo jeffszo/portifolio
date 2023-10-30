@@ -4,7 +4,7 @@ import Dotted from "../../../assets/Dotted.png";
 
 export function Home() {
   return (
-    <S.Container>
+    <S.Container id="home">
       <S.ContainerApresentation>
         <S.ContainerDottedTwo>
           <S.IcontDotted src={Dotted} />
