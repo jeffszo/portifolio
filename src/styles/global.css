@@ -1,14 +1,10 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
   color: inherit;
-
-
-
-
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -19,6 +15,9 @@ body {
   background-color: #000814;
   overflow-x: hidden;
 }
+
+
+
 
 
 

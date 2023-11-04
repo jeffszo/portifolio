@@ -8,7 +8,7 @@ export const Container = styled.div`
   align-items: center;
 
   overflow-x: hidden;
-  background-color: #000814;
+
   margin-top: 1rem;
 
   @media (max-width: 910px) {

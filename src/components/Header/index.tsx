@@ -4,11 +4,13 @@ import { PiSunDimThin } from "react-icons/pi";
 import { MdDarkMode } from "react-icons/md";
 import { RiMenu4Line } from "react-icons/ri";
 import { Container, Lista, ItemLista, ListaTwo, ItemListaTwo } from "./styles";
+import { lightTheme, darkTheme } from '../../theme/theme.js'
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isIconShow, setIsIconShow] = useState(false);
   const [isIconMood, setIsIconMood] = useState(false);
+
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);

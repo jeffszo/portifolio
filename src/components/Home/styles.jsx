@@ -104,7 +104,7 @@ export const ContainerApresentation = styled.div`
 `;
 
 export const Container = styled.div`
-  background-color: #000814;
+ 
   display: flex;
   align-items: center;
   justify-content: center;

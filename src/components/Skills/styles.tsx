@@ -6,7 +6,7 @@ import { SiStyledcomponents } from "react-icons/si";
 import { DiJavascript } from "react-icons/di";
 
 export const Container = styled.div`
-  background-color: #000814;
+
   margin-bottom: 20rem;
 `;
 

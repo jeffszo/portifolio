@@ -7,7 +7,7 @@ import { GrMysql } from "react-icons/gr";
 import { DiJavascript } from "react-icons/di";
 
 export const ContainerGeral = styled.div`
-    background-color: #000814;
+
     margin-bottom: 20rem;
 `
 
