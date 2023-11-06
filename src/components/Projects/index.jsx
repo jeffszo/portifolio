@@ -49,16 +49,19 @@ export function Projects() {
             </a>
           </S.ContainerLinks>
         </S.Caixa>
-        <S.Caixa>
-          <S.ImgProject src={ImageRegularShow} />
+        
+      </S.ContainerProjects>
+      <S.ContainerProjects>
+      <S.Caixa>
+          <S.ImgProject src={Learnovation} />
           <S.ContainerLinks>
-            <a target="blank" href="https://github.com/jeffszo/joker">
+            <a target="blank" href="https://github.com/jeffszo/learnovation">
               <S.LinkProject backgroundColor="black">
                 <BsGithub size={26} />
                 code
               </S.LinkProject>
             </a>
-            <a target="blank" href="https://joker-wheat.vercel.app/">
+            <a target="blank" href="https://learnovation.vercel.app/">
               <S.LinkProject backgroundColor="#657bca">
                 <GrDeploy size={26} />
                 deploy
@@ -66,18 +69,16 @@ export function Projects() {
             </a>
           </S.ContainerLinks>
         </S.Caixa>
-      </S.ContainerProjects>
-      <S.ContainerProjects>
-      <S.Caixa>
-          <S.ImgProject src={Learnovation} />
+        <S.Caixa>
+          <S.ImgProject src={ImageRegularShow} />
           <S.ContainerLinks>
-            <a target="blank" href="https://github.com/jeffszo/joker">
+            <a target="blank" href="https://github.com/jeffszo/regularshow">
               <S.LinkProject backgroundColor="black">
                 <BsGithub size={26} />
                 code
               </S.LinkProject>
             </a>
-            <a target="blank" href="https://joker-wheat.vercel.app/">
+            <a target="blank" href="https://regularshow.vercel.app/">
               <S.LinkProject backgroundColor="#657bca">
                 <GrDeploy size={26} />
                 deploy

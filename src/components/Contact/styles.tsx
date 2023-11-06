@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  Hover over the image
   margin: 0;
   overflow-x: hidden;
 `;
