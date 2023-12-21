@@ -13,7 +13,7 @@ export const Container = styled.div`
 
   @media (max-width: 910px) {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: start;
     padding: 1rem 0;
   }
@@ -39,6 +39,7 @@ export const ListaTwo = styled.div`
   @media (max-width: 967px) {
     display: flex;
     flex-direction: column;
+    align-items: end;
     gap: 2rem;
     background-color: #00081430;
   }

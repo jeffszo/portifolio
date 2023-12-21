@@ -11,7 +11,7 @@ export function Projects() {
     <S.ContainerGeral id="projects">
       <S.ContainerText>
         <S.Title>Projects</S.Title>
-        <S.MouseHover>(Hover over the image *)</S.MouseHover>
+        <S.MouseHover></S.MouseHover>
       </S.ContainerText>
       <S.ContainerProjects>
         <S.Caixa>
