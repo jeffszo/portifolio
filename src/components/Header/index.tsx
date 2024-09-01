@@ -2,12 +2,10 @@ import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { HiOutlineMenu } from "react-icons/hi";
 import { Container, Lista, ItemLista, ListaTwo, ItemListaTwo } from "./styles";
-// import { Globe } from "phosphor-react";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isIconShow, setIsIconShow] = useState(false);
-  // const [isIconMood, setIsIconMood] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -20,11 +18,7 @@ export function Header() {
   ) : (
     <HiOutlineMenu size={40} />
   );
-  // const MoodIcon = isIconMood? (
-  //   <PiSunDimThin size={40} />
-  // ) : (
-  //   <MdDarkMode size={40} />
-  // );
+
 
   return (
     <Container>

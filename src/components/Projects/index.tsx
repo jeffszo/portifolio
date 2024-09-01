@@ -4,7 +4,6 @@ import ImageHydra from "../../../assets/img/hydra.png";
 import Learnovation from "../../../assets/img/learnovatio.png";
 import ImageInventory from "../../../assets/img/stock.png";
 import ImageMovies from "../../../assets/img/movies.png";
-import ImageRegularShow from "../../../assets/img/"
 import { FaReact } from "react-icons/fa6";
 import ImageTodo from "../../../assets/img/todo.png";
 import { BsGithub } from "react-icons/bs";
