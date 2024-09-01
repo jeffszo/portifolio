@@ -1,2 +1,2 @@
 ## 💻 My portfolio
-<img src="./assets/screen-myself.png"></img>
+<!-- <img src="./assets/screen-myself.png"></img> -->
