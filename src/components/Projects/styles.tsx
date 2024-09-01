@@ -86,7 +86,11 @@ export const ContainerLinks = styled.div`
   margin-top: 1.5rem;
 `;
 
-export const LinkProject = styled.a`
+interface ButtonProps {
+  backgroundColor?: string;
+}
+
+export const LinkProject = styled.a<ButtonProps>`
   background-color: ${(props) =>
     props.backgroundColor ? props.backgroundColor : "white"};
   display: flex;
