@@ -2,41 +2,26 @@ import * as S from "./styles.js";
 
 export function Skills() {
   return (
-    <>
-      <S.Container id="tools">
-        <S.Title>Tools</S.Title>
-        <S.ContainerGeral>
-          <S.ContainerOne>
-            <S.ContainerIcon>
-              <S.Html />
-            </S.ContainerIcon>
-            <S.ContainerIcon>
-              <S.Css />
-            </S.ContainerIcon>
-            <S.ContainerIcon>
-              <S.Javascript />
-            </S.ContainerIcon>
-            <S.ContainerIcon>
-              <S.React />
-            </S.ContainerIcon>
-          </S.ContainerOne>
+    <S.Container id="tools">
+      <S.Title>Tecnologias</S.Title>
+      <S.ContainerGeral>
+        <S.ContainerOne>
+          <S.Html />
+          <S.Css />
+          <S.Javascript />
+          <S.Typescript />
+        </S.ContainerOne>
 
-          <S.ContainerTwo>
-            <S.ContainerIcon>
-              <S.Figma />
-            </S.ContainerIcon>
-            <S.ContainerIcon>
-              <S.Styled />
-            </S.ContainerIcon>
-            <S.ContainerIcon>
-              <S.Sass />
-            </S.ContainerIcon>
-            <S.ContainerIcon>
-              <S.Git />
-            </S.ContainerIcon>
-          </S.ContainerTwo>
-        </S.ContainerGeral>
-      </S.Container>
-    </>
+        <S.ContainerTwo>
+          <S.React />
+
+          <S.Styled />
+
+          <S.Nodejs />
+
+          <S.Git />
+        </S.ContainerTwo>
+      </S.ContainerGeral>
+    </S.Container>
   );
 }

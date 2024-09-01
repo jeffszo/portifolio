@@ -1,32 +1,24 @@
 import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
-// import { PiSunDimThin } from "react-icons/pi";
-// import { MdDarkMode } from "react-icons/md";
-import { RiMenu4Line } from "react-icons/ri";
+import { HiOutlineMenu } from "react-icons/hi";
 import { Container, Lista, ItemLista, ListaTwo, ItemListaTwo } from "./styles";
-
+// import { Globe } from "phosphor-react";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isIconShow, setIsIconShow] = useState(false);
   // const [isIconMood, setIsIconMood] = useState(false);
 
-
-
   const toggleMenu = () => {
     setIsOpen(!isOpen);
     setIsIconShow(!isIconShow);
   };
 
-  // const toggleIcon = () => {
-  //   setIsIconMood(!isIconMood);
-    
-  // };
 
   const MenuIcon = isIconShow ? (
     <AiOutlineClose size={40} />
   ) : (
-    <RiMenu4Line size={40} />
+    <HiOutlineMenu size={40} />
   );
   // const MoodIcon = isIconMood? (
   //   <PiSunDimThin size={40} />
@@ -37,24 +29,28 @@ export function Header() {
   return (
     <Container>
       <Lista>
-        <ItemLista href="#home">Home</ItemLista>
-        <ItemLista href="#about">About</ItemLista>
-        <ItemLista href="#experience">Experience</ItemLista>
-        <ItemLista href="#tools">Tools</ItemLista>
-        <ItemLista href="#projects">Projects</ItemLista>
-        <ItemLista href="#contacts">Contacts</ItemLista>
+        <ItemLista href="#about">Sobre</ItemLista>
+        <ItemLista href="#tools">Tecnologias</ItemLista>
+        <ItemLista href="#experience">Serviços</ItemLista>
+        <ItemLista href="#projects">Projetos</ItemLista>
+        <ItemLista href="#contacts">Contato</ItemLista>
+        {/* <ItemLista>
+        <Globe size={32} />
+        </ItemLista> */}
       </Lista>
       {/* <ItemListaTwo onClick={toggleIcon}>{MoodIcon}</ItemListaTwo> */}
       <ListaTwo>
         <ItemListaTwo onClick={toggleMenu}>{MenuIcon}</ItemListaTwo>
         {isOpen && (
           <>
-            <ItemListaTwo href="#home">Home</ItemListaTwo>
-            <ItemListaTwo href="#about">About</ItemListaTwo>
-            <ItemListaTwo href="#experience">Experience</ItemListaTwo>
-            <ItemListaTwo href="#tools">Tools</ItemListaTwo>
-            <ItemListaTwo href="#projects">Projects</ItemListaTwo>
-            <ItemListaTwo href="#contacts">Contacts</ItemListaTwo>
+            <ItemListaTwo href="#about">Sobre</ItemListaTwo>
+            <ItemListaTwo href="#experience">Tecnologias</ItemListaTwo>
+            <ItemListaTwo href="#tools">Serviços</ItemListaTwo>
+            <ItemListaTwo href="#projects">Projetos</ItemListaTwo>
+            <ItemListaTwo href="#contacts">Contato</ItemListaTwo>
+            {/* <ItemListaTwo>
+            <Globe size={32} />
+            </ItemListaTwo> */}
           </>
         )}
       </ListaTwo>

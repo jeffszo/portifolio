@@ -1,84 +1,18 @@
 import styled from "styled-components";
-import { AiFillHtml5 } from "react-icons/ai";
-import { BiLogoCss3 } from "react-icons/bi";
-import { SiReact, SiPhp } from "react-icons/si";
-import { FaBootstrap } from "react-icons/fa";
-import { GrMysql } from "react-icons/gr";
-import { DiJavascript } from "react-icons/di";
+import { AiFillLayout } from "react-icons/ai";
+import { GiProgression } from "react-icons/gi";
+import { FaUser, FaServer } from "react-icons/fa";
 
 export const ContainerGeral = styled.div`
-
-    margin-bottom: 20rem;
-`
-
-
-export const Html = styled(AiFillHtml5)`
-  color: #fb5607;
-  font-size: 45px; 
-
-  @media (max-width: 767px){
-    font-size: 30px;
-  }
-`;
-
-export const Css = styled(BiLogoCss3)`
-  color: #00509d;
-  font-size: 45px;
-
-  @media (max-width: 767px){
-    font-size: 30px;
-  }
-`;
-
-export const Bootstrap = styled(FaBootstrap)`
-  color: purple;
-  font-size: 45px;
-
-  @media (max-width: 767px){
-    font-size: 30px;
-  }
-`;
-
-export const Mysql = styled(GrMysql)`
-  font-size: 45px;
-
-  @media (max-width: 767px){
-    font-size: 30px;
-  }
-`;
-
-export const React = styled(SiReact)`
-  color: #61dafb;
-  font-size: 45px;
-  margin: 0 0.2rem;
-
-  @media (max-width: 767px){
-    font-size: 30px;
-  }
-`;
-
-export const Javascript = styled(DiJavascript)`
-  color: #ffea00;
-  font-size: 45px;
-
-  @media (max-width: 767px){
-    font-size: 30px;
-  }
-`;
-
-export const Php = styled(SiPhp)`
-  color: #7a86b8;
-  font-size: 45px;
-
-    @media (max-width: 767px){
-    font-size: 30px;
-  }
+  margin-bottom: 20rem;
 `;
 
 export const ContainerTitle = styled.div`
   width: 100%;
   margin: 0;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 `;
 
@@ -87,81 +21,84 @@ export const Title = styled.h1`
 
   font-size: 1.6rem;
   font-weight: 500;
-  color:#657bca;
-  
+  color: #657bca;
 
-
+  @media (max-width: 767px) {
+    margin-bottom: 0.2rem;
+  }
 `;
 
-export const ContainerExper = styled.div`
+
+export const Desc = styled.span`
+  color: #455065;
+`;
+
+export const ContainerAllCardsOne = styled.div`
   display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  gap: 10rem;
+
+  @media (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    flex-direction: column;
+    gap: 2rem;
+  }
+`;
+
+export const ContainerAllCardsTwo = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  gap: 10rem;
+
+  @media (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    flex-direction: column;
+    gap: 2rem;
+  }
+`;
+
+export const ContainerCardService = styled.div`
+  display: flex;
+  justify-content: center;
+  border: none;
+  background-color: #000814;
   flex-direction: column;
   align-items: center;
-  margin: 1rem 8rem;
-
-  @media (max-width: 375px){
-    margin: 1rem 4rem;
-  }
-
-  @media (max-width: 767px){
-    margin: 1rem 4rem;
-  }
+  height: 13.5rem;
+  width: 20rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 `;
 
-export const TitleEmpresa = styled.p`
+export const TypeCardSerive = styled.p`
+  color: #aea3b0;
+`;
+
+export const IconOne = styled(AiFillLayout)`
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
   color: #fff;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  opacity: 0.9;
-  margin: 0.8rem 0;
-  width: 50%;
-  font-size: 1.2rem;
-
-  @media (max-width: 767px) {
-    width: 100%;
-  }
 `;
 
-export const DescEmpresa = styled.li`
+export const IconTwo = styled(FaServer)`
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
   color: #fff;
-  font-family: "Poppins", sans-serif;
-  font-size: 1.1rem;
-  font-weight: 300;
-  opacity: 0.8;
-  list-style: none;
-  width: 50%;
-
-  @media (max-width: 767px) {
-    width: 100%;
-    
-  }
-
-
-  @media (max-width: 375px){
-    font-size: 1rem;
-}
 `;
 
-export const PeriodoEmpresa = styled.p`
-  color: #fff ;
-  font-family: "Poppins", sans-serif;
-  font-size: 1.1rem;
-  width: 50%;
-
-  strong{
-    font-weight: 400;
-  }
-  
-
-  @media (max-width: 767px) {
-    width: 100%;
-  }
+export const IconThree = styled(GiProgression)`
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
 `;
-
-export const ContainerIcons = styled.div`
-  margin: 1rem 0 0.2rem -0.4rem;
-
-  @media (max-width: 767px) {
-    width: 100%;
-  }
+export const IconFour = styled(FaUser)`
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
 `;

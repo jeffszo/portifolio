@@ -5,14 +5,19 @@
   color: inherit;
   margin: 0;
   padding: 0;
+  background-color: #000814;
+
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+svg{
+  background-color: transparent;
+}
+
 body {
-  background-color: #000814;
   overflow-x: hidden;
 }
 

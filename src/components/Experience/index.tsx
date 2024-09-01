@@ -4,28 +4,34 @@ export function Experience() {
   return (
     <S.ContainerGeral id="experience">
       <S.ContainerTitle>
-        <S.Title>Experience</S.Title>
+        <S.Title>Serviços_</S.Title>
+        <S.Desc>As minhas atribuições e responsabilidades</S.Desc>
       </S.ContainerTitle>
-      <S.ContainerExper>
-        <S.TitleEmpresa>Mitikas - Information Technology</S.TitleEmpresa>
-        <S.DescEmpresa>
-          Responsible for creating mobile applications with React Native.
-          Furthermore, in web development I used HTML, CSS, JavaScript,
-          Bootstrap, PHP and MySQL.
-          <S.ContainerIcons>
-            <S.Html />
-            <S.Css />
-            <S.Javascript />
-            <S.Bootstrap />
-            <S.React />
-            <S.Php />
-            <S.Mysql />
-          </S.ContainerIcons>
-        </S.DescEmpresa>
-        <S.PeriodoEmpresa>
-          <strong>Period</strong>: August/2023
-        </S.PeriodoEmpresa>
-      </S.ContainerExper>
+
+      <S.ContainerAllCardsOne>
+        <S.ContainerCardService>
+          <S.IconOne />
+          <S.TypeCardSerive>Criação de interfaces responsivas</S.TypeCardSerive>
+        </S.ContainerCardService>
+
+        <S.ContainerCardService>
+          <S.IconTwo />
+          <S.TypeCardSerive>Consumo de APIs</S.TypeCardSerive>
+        </S.ContainerCardService>
+      </S.ContainerAllCardsOne>
+
+      <S.ContainerAllCardsTwo>
+        <S.ContainerCardService>
+          <S.IconThree />
+          <S.TypeCardSerive>Otimização para perfomance</S.TypeCardSerive>
+        </S.ContainerCardService>
+        <S.ContainerCardService>
+          <S.IconFour />
+          <S.TypeCardSerive>
+            Experiência do usuário
+          </S.TypeCardSerive>
+        </S.ContainerCardService>
+      </S.ContainerAllCardsTwo>
     </S.ContainerGeral>
   );
 }

@@ -1,44 +1,39 @@
 import styled from "styled-components";
-import { FaReact, FaFigma, FaSass, FaGitAlt } from "react-icons/fa";
+import { FaReact, FaGitAlt, FaNodeJs  } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
 import { TfiHtml5 } from "react-icons/tfi";
-import { SiStyledcomponents } from "react-icons/si";
+import { SiStyledcomponents,SiTypescript  } from "react-icons/si";
 import { DiJavascript } from "react-icons/di";
 
 export const Container = styled.div`
-
-  margin-bottom: 20rem;
+  margin-bottom: 19rem;
 `;
 
 export const ContainerIcon = styled.div`
-  box-shadow: rgba(0, 0, 0, 0.9) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   padding: 1rem 0;
-  margin: 0 1rem;
+  margin: 1rem 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
 
   @media (max-width: 767px) {
-    height: 7rem;
-    width: 5.5rem;
   }
 
   @media (max-width: 510px) {
-    height: 4rem;
-    width: 4rem;
   }
 
   @media (max-width: 391px) {
-    height: 4.4rem;
-    width: 4.8rem;
-    margin: 0.4rem;
+
   }
 `;
 
 export const React = styled(FaReact)`
   color: #61dafb;
-  font-size: 5rem;
-  margin: 1rem 2.5rem;
+  font-size: 4.2rem;
+  margin: 1.5rem 4rem;
+
 
   transition: all 0.5s ease;
 
@@ -47,60 +42,60 @@ export const React = styled(FaReact)`
   }
 
   @media (max-width: 767px) {
-    font-size: 3rem;
+    font-size: 3.2rem;
     margin: 1rem 0;
   }
 
   @media (max-width: 510px) {
-    font-size: 2rem;
   }
 `;
 
-export const Figma = styled(FaFigma)`
-  font-size: 5rem;
-  margin: 1rem 2.5rem;
+export const Typescript = styled(SiTypescript )`
+  font-size: 4.2rem;
+  margin: 1.5rem 4rem;
+
 
   transition: all 0.5s ease;
-  color: #e63946;
+  color: #205389;
 
   &:hover {
     transform: translateY(-5px);
   }
 
   @media (max-width: 767px) {
-    font-size: 3rem;
+    font-size: 3.2rem;
     margin: 1rem 0;
   }
 
   @media (max-width: 510px) {
-    font-size: 2rem;
   }
 `;
 
-export const Sass = styled(FaSass)`
-  font-size: 5rem;
-  margin: 1rem 2.5rem;
+export const Nodejs = styled(FaNodeJs )`
+  font-size: 4.2rem;
+  margin: 1.5rem 4rem;
+
 
   transition: all 0.5s ease;
-  color: #ffafcc;
+  color: #84ba64;
 
   &:hover {
     transform: translateY(-5px);
   }
 
   @media (max-width: 767px) {
-    font-size: 3rem;
+    font-size: 3.2rem;
     margin: 1rem 0;
   }
 
   @media (max-width: 510px) {
-    font-size: 2rem;
   }
 `;
 
 export const Git = styled(FaGitAlt)`
-  font-size: 5rem;
-  margin: 1rem 2.5rem;
+  font-size: 4.2rem;
+  margin: 1.5rem 4rem;
+
 
   transition: all 0.5s ease;
   color: #fb5607;
@@ -110,18 +105,18 @@ export const Git = styled(FaGitAlt)`
   }
 
   @media (max-width: 767px) {
-    font-size: 3rem;
+    font-size: 3.2rem;
     margin: 1rem 0;
   }
 
   @media (max-width: 510px) {
-    font-size: 2rem;
   }
 `;
 
 export const Css = styled(IoLogoCss3)`
-  font-size: 5rem;
-  margin: 1rem 2.5rem;
+  font-size: 4.2rem;
+  margin: 1.5rem 4rem;
+
 
   transition: all 0.5s ease;
   color: #00509d;
@@ -130,17 +125,17 @@ export const Css = styled(IoLogoCss3)`
     transform: translateY(-5px);
   }
   @media (max-width: 767px) {
-    font-size: 3rem;
+    font-size: 3.2rem;
     margin: 1rem 0;
   }
 
   @media (max-width: 510px) {
-    font-size: 2rem;
   }
 `;
 export const Javascript = styled(DiJavascript)`
-  font-size: 5rem;
-  margin: 1rem 2.5rem;
+  font-size: 4.2rem;
+  margin: 1.5rem 4rem;
+
 
   transition: all 0.5s ease;
   color: #ffea00;
@@ -150,17 +145,17 @@ export const Javascript = styled(DiJavascript)`
   }
 
   @media (max-width: 767px) {
-    font-size: 3rem;
+    font-size: 3.2rem;
     margin: 1rem 0;
   }
 
   @media (max-width: 510px) {
-    font-size: 2rem;
   }
 `;
 export const Html = styled(TfiHtml5)`
-  font-size: 5rem;
-  margin: 1rem 2.5rem;
+  font-size: 4.2rem;
+  margin: 1.5rem 4rem;
+
 
   transition: all 0.5s ease;
   color: #fb5607;
@@ -170,17 +165,17 @@ export const Html = styled(TfiHtml5)`
   }
 
   @media (max-width: 767px) {
-    font-size: 3rem;
+    font-size: 3.2rem;
     margin: 1rem 0;
   }
   @media (max-width: 510px) {
-    font-size: 2rem;
   }
 `;
 
 export const Styled = styled(SiStyledcomponents)`
-  font-size: 5rem;
-  margin: 1rem 2.5rem;
+  font-size: 4.2rem;
+  margin: 1.5rem 4rem;
+
 
   transition: all 0.5s ease;
   color: #d81159;
@@ -190,11 +185,10 @@ export const Styled = styled(SiStyledcomponents)`
   }
 
   @media (max-width: 510px) {
-    font-size: 2rem;
   }
 
   @media (max-width: 767px) {
-    font-size: 3rem;
+    font-size: 4.2rem;
     margin: 1rem 0;
   }
 `;
@@ -211,16 +205,18 @@ export const ContainerGeral = styled.div`
 
 export const ContainerOne = styled.div`
   display: flex;
-  gap: 10re;
   margin: 0 0 2rem 0;
 
   @media (max-width: 767px) {
     display: flex;
     align-items: center;
+    gap: 1rem;
   }
 
   @media (max-width: 510px) {
     margin: 1rem;
+    gap: 1rem;
+
   }
 `;
 
@@ -232,6 +228,14 @@ export const ContainerTwo = styled.div`
     display: flex;
     align-items: center;
     margin: 2rem 0 0 0;
+    gap: 1rem;
+
+  }
+
+  @media (max-width: 510px) {
+    margin: 1rem;
+    gap: 1rem;
+
   }
 `;
 
@@ -241,7 +245,7 @@ export const Title = styled.h1`
   text-align: center;
   font-weight: 500;
   color: #657bca;
-  margin: 0 0 2rem 0;
+  margin: 0 0 4rem 0;
 
   @media (max-width: 767px) {
     margin: 15rem 0 2rem 0;

@@ -6,7 +6,6 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
   overflow-x: hidden;
 
   margin-top: 1rem;
@@ -30,7 +29,10 @@ export const Lista = styled.ul`
   @media (max-width: 910px) {
     display: none;
   }
+
+
 `;
+
 
 export const ListaTwo = styled.div`
   display: none;

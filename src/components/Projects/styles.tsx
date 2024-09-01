@@ -29,8 +29,9 @@ export const ContainerProjects = styled.div`
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  gap: 5rem;
-  margin: 3rem 0;
+  gap: 4rem;
+  margin: 2rem 0;
+  
 
   @media (max-width: 967px) {
     display: flex;
@@ -43,7 +44,9 @@ export const ContainerProjects = styled.div`
 `;
 
 export const NameProject = styled.h3`
-  font-weight: 500;
+  color: #fff;
+  margin-bottom: 1rem ;
+  font-weight: 600;
   opacity: 0.9;
 `;
 
@@ -57,7 +60,7 @@ export const Caixa = styled.div`
   align-items: center;
   width: 400px;
   height: 300px;
-  margin: 1rem 0;
+  margin: 3rem 0;
 `;
 
 export const ImgProject = styled.img`
@@ -106,9 +109,9 @@ export const LinkProject = styled.a`
   }
 `;
 
-export const MouseHover = styled.span`
-  opacity: 0.7;
-  color: #fff;
+export const Desc = styled.span`
+  color: #455065;
+
 
   @media (max-width: 910px) {
     display: none;
@@ -118,3 +121,15 @@ export const MouseHover = styled.span`
     display: none;
   }
 `;
+
+export const ImageModal = styled.image`
+
+`
+
+export const ContainerIconsModal = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  margin-top: 1rem;
+
+`

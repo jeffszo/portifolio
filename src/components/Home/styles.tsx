@@ -1,7 +1,8 @@
 import { BsLinkedin } from "react-icons/bs";
 import { ImGithub } from "react-icons/im";
-import { RiTwitterXFill } from "react-icons/ri";
 import { keyframes, styled } from "styled-components";
+import { FaDownload } from "react-icons/fa";
+
 
 export const Loading = keyframes`
   to {
@@ -10,6 +11,7 @@ export const Loading = keyframes`
 `;
 
 export const IcontDotted = styled.img`
+
   animation: ${Loading} 7s linear infinite;
 `;
 
@@ -17,6 +19,7 @@ export const ContainerText = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
 
   @media (max-width: 466px) {
     align-items: center;
@@ -31,6 +34,8 @@ export const ContainerText = styled.div`
   }
   
 `;
+
+
 
 export const ContainerDotted = styled.div`
   display: flex;
@@ -78,18 +83,18 @@ export const Github = styled(ImGithub)`
   font-size: 35px;
   margin: 0 0.5rem;
   transition: all 0.3s ease;
-  color: gray;
+  color: #808080;
 
   @media (max-width: 391px) {
     font-size: 30px;
   }
 `;
 
-export const Twitter = styled(RiTwitterXFill)`
+export const Download = styled(FaDownload)`
   cursor: pointer;
   font-size: 35px;
   transition: all 0.3s ease;
-  color: #fff;
+  color: #cccccc;
 
   @media (max-width: 391px) {
     font-size: 30px;
@@ -104,7 +109,6 @@ export const ContainerApresentation = styled.div`
 `;
 
 export const Container = styled.div`
- 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,11 +136,12 @@ export const TitleDesc = styled.p`
   color: #fff;
 
   @media (max-width: 767px) {
-    font-size: 1.1rem;
+    text-align: center;
+    font-size: 1rem;
   }
 
   @media (max-width: 395px) {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 `;
 
@@ -150,11 +155,11 @@ export const Describe = styled.p`
   font-family: "Poppins", sans-serif;
   color: #fff;
 
-  font-size: 4rem;
+  font-size: 3.5rem;
   margin: 0;
 
   @media (max-width: 767px) {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     text-align: center;
     margin: 0;
   }
@@ -163,7 +168,7 @@ export const Describe = styled.p`
     font-size: 2rem;
   }
   @media (max-width: 391px) {
-    font-size: 2rem;
+    font-size: 1.55rem;
     margin: 0 0 1rem 0;
 
   }

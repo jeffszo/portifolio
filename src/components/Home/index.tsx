@@ -1,5 +1,6 @@
 import * as S from "./styles";
 import Dotted from "../../../assets/Dotted.png";
+import { Button } from "@chakra-ui/react";
 
 
 export function Home() {
@@ -11,9 +12,12 @@ export function Home() {
           <S.IcontDotted src={Dotted} />
         </S.ContainerDottedTwo>
         <S.ContainerText>
-          <S.TitleDesc>Hi, my name is Jeferson Ferreira and</S.TitleDesc>
+
+          <S.TitleDesc>
+            Olá, meu nome é Jeferson Ferreira!
+          </S.TitleDesc>
           <S.Describe>
-            I'm developer <S.Span>frontend</S.Span>{" "}
+            Desenvolvedor <S.Span>front-end</S.Span>{" "}
           </S.Describe>
         </S.ContainerText>
         <S.ContainerRedes>
@@ -26,8 +30,8 @@ export function Home() {
           <S.Link target="blank" href="https://github.com/jeffszo">
             <S.Github />
           </S.Link>
-          <S.Link target="blank" href="https://twitter.com/jeffszo7">
-            <S.Twitter />
+          <S.Link href="../../../public/Jeferson Ferreira - Front-end.pdf" download>
+            <Button>BAIXAR CURRÍCULO</Button>
           </S.Link>
         </S.ContainerRedes>
         <S.ContainerDotted>

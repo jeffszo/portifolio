@@ -7,7 +7,11 @@ import { Projects } from "./components/Projects";
 import { Contacts } from "./components/Contact";
 import "./styles/global.css";
 
+
 export default function App() {
+
+
+
   return (
     <>
       <Header></Header>
