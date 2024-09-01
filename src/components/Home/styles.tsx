@@ -137,11 +137,11 @@ export const TitleDesc = styled.p`
 
   @media (max-width: 767px) {
     text-align: center;
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   @media (max-width: 395px) {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 `;
 
@@ -182,6 +182,8 @@ export const Describe = styled.p`
 
 export const ContainerRedes = styled.div`
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0.4rem 0;
 
   @media (max-width: 375px) {

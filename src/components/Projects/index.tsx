@@ -10,7 +10,7 @@ import { BsGithub } from "react-icons/bs";
 import { GrDeploy } from "react-icons/gr";
 import { SiStyledcomponents, SiVite, SiTypescript, SiChakraui, SiSass    } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
-
+import {OrbitProgress} from 'react-loading-indicators'
 
 import {
   useDisclosure,
@@ -71,15 +71,16 @@ export function Projects() {
         <S.Caixa>
           <S.NameProject>Marketplace NFT</S.NameProject>
           <S.ImgProject src={Image} onClick={onOpenLogin} />
-          <Modal isOpen={isOpenLogin} onClose={onCloseLogin} isCentered>
+          <Modal  isOpen={isOpenLogin} onClose={onCloseLogin} isCentered>
             <ModalOverlay />
             <ModalContent>
               <ModalHeader fontWeight="bold" color="#fff">
                 Marketplace NFT
               </ModalHeader>
               <ModalCloseButton />
-              <ModalBody>
-                 <img src={Image} alt="" width="100%" /> 
+              <ModalBody display={'flex'} flexDirection={'column'} alignItems={'center'} justifyContent={'center'}>
+                 {/* <img src={Image} alt="" width="100%" />  */}
+                 <OrbitProgress variant="spokes" color="#32becd" size="large" textColor="#fff" />
 
                 <Text textAlign={'center'} marginTop="4" color="gray">
                  Projeto em andamento
@@ -115,7 +116,7 @@ export function Projects() {
               </ModalHeader>
               <ModalCloseButton />
               <ModalBody>
-                <img src="../../../assets/img/todo.png" alt="" width="100%" />
+                <img src={ImageTodo} alt="" width="100%" />
                 <Text marginTop="4" color="gray">
                   O ToDo List é um projeto que tem como finalidade adicionar
                   tarefas a serem feitas. Nele, utilizei o React + Typescript
@@ -160,16 +161,19 @@ export function Projects() {
               <ModalCloseButton />
               <ModalBody>
                 <img
-                  src="../../../assets/img/hydra.png"
+                  src={ImageHydra}
                   alt=""
                   width="100%"
                 />
                 <Text marginTop="4" color="gray">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Fugiat odio iusto nisi incidunt? Saepe dignissimos hic quis
-                  amet recusandae nobis quibusdam ipsam dolores non blanditiis,
-                  magnam sunt, quaerat cum fuga.{" "}
+                  Hydra é uma landing page sobre as novidades da realidade virtual e a integração da tecnologia com o 
+                  comportamento humano. Foi construído com React + Chakra UI.{" "}
                 </Text>
+                <S.ContainerIconsModal>
+                  <SiVite size={25} color="#a2d2ff" />
+                  <FaReact size={25} color="#a2d2ff" />
+                  <SiChakraui size={25} color="#a2d2ff" />
+                </S.ContainerIconsModal>
               </ModalBody>
             </ModalContent>
           </Modal>
@@ -251,7 +255,7 @@ export function Projects() {
                   Listagem dos principais filmes que foram lançados em 2024. Utilizei a API do TMDB para realizar a consulta e foi desenvolvida com React + Typescript e Sass.{" "}
                 </Text>
                 <S.ContainerIconsModal>
-                <SiVite size={25} color="#a2d2ff" />
+                  <TbBrandNextjs size={25} color="#a2d2ff" />
                   <FaReact size={25} color="#a2d2ff" />
                   <SiTypescript size={25} color="#a2d2ff"  />
                   <SiSass  size={25} color="#a2d2ff" />
@@ -306,7 +310,7 @@ export function Projects() {
                 </ModalBody>
               </ModalContent>
             </Modal>
-            <a target="blank" href="https://github.com/jeffszo/regularshow">
+            <a target="blank" href="https://github.com/jeffszo/inventory-management">
               <S.LinkProject backgroundColor="black">
                 <BsGithub size={26} />
                 code

@@ -44,7 +44,7 @@ export const ContainerAllCardsOne = styled.div`
     align-items: center;
     margin: 2rem 0;
     flex-direction: column;
-    gap: 2rem;
+    gap: 6rem;
   }
 `;
 
@@ -57,9 +57,9 @@ export const ContainerAllCardsTwo = styled.div`
   @media (max-width: 767px) {
     display: flex;
     align-items: center;
-    margin: 2rem 0;
+    margin: 6rem 0;
     flex-direction: column;
-    gap: 2rem;
+    gap: 6rem;
   }
 `;
 
