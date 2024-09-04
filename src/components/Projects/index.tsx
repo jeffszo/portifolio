@@ -106,7 +106,7 @@ export function Projects() {
         </S.Caixa>
 
         <S.Caixa>
-          <S.NameProject>ToDo List</S.NameProject>
+          <S.NameProject>ToDo</S.NameProject>
           <S.ImgProject src={ImageTodo} onClick={onOpenTodo} />
           <Modal isOpen={isOpenTodo} onClose={onCloseTodo} isCentered>
             <ModalOverlay />
@@ -178,18 +178,17 @@ export function Projects() {
             </ModalContent>
           </Modal>
           <S.ContainerLinks>
-            <a target="blank" href="https://github.com/jeffszo/Hydra">
+            <a target="blank" href="https://github.com/jeffszo/hydra-lp">
               <S.LinkProject backgroundColor="black">
                 <BsGithub size={26} />
                 code
               </S.LinkProject>
             </a>
-            <a target="blank" href="https://Hydra-wheat.vercel.app/">
+         
               <S.LinkProject backgroundColor="#657bca">
                 <GrDeploy size={26} />
                 deploy
               </S.LinkProject>
-            </a>
           </S.ContainerLinks>
         </S.Caixa>
       </S.ContainerProjects>
@@ -294,19 +293,20 @@ export function Projects() {
                  Stock
                 </ModalHeader>
                 <ModalCloseButton />
-                <ModalBody>
-                  <img src={ImageInventory} alt="" width="100%" />
+                <ModalBody textAlign={'center'}>
+                  {/* <img src={ImageInventory} alt="" width="100%" /> */}
+                  <OrbitProgress  variant="spokes" color="#32becd" size="large" textColor="#fff" />
                   <Text marginTop="4" color="gray">
                     Stock é um projeto desenvolvido para adicionar produtos e realizar a consulta atráves da listagem. 
-                    Utilizei React + Typescript e Chakra UI para criar o contexto, tipagem e a interface visual.
+                    Utilizei React + Typescript e Chakra UI para criar o contexto, tipagem e a interface visual (Em andamento)
                     {" "}
                   </Text>
-                  <S.ContainerIconsModal>
+                  <Container mt={'1.5rem'} display={'flex'} justifyContent={'center'} gap={'0.5rem'}>
                   <SiVite size={25} color="#a2d2ff" />
                   <FaReact size={25} color="#a2d2ff" />
                   <SiTypescript size={25} color="#a2d2ff"  />
                   <SiChakraui  size={25} color="#a2d2ff" />
-                </S.ContainerIconsModal>
+                </Container>
                 </ModalBody>
               </ModalContent>
             </Modal>
@@ -316,12 +316,12 @@ export function Projects() {
                 code
               </S.LinkProject>
             </a>
-            <a target="blank" href="https://regularshow.vercel.app/">
+           
               <S.LinkProject backgroundColor="#657bca">
                 <GrDeploy size={26} />
                 deploy
               </S.LinkProject>
-            </a>
+            
           </S.ContainerLinks>
         </S.Caixa>
       </S.ContainerProjects>
