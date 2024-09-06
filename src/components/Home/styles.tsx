@@ -137,11 +137,10 @@ export const TitleDesc = styled.p`
 
   @media (max-width: 767px) {
     text-align: center;
-    font-size: 2rem;
   }
 
   @media (max-width: 395px) {
-    font-size: 1.3rem;
+    font-size: 1.15rem;
   }
 `;
 
@@ -165,7 +164,7 @@ export const Describe = styled.p`
   }
 
   @media (max-width: 463px) {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
   @media (max-width: 391px) {
     font-size: 1.55rem;
