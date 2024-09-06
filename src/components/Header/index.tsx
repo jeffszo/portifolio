@@ -24,8 +24,8 @@ export function Header() {
     <Container>
       <Lista>
         <ItemLista href="#about">Sobre</ItemLista>
-        <ItemLista href="#tools">Tecnologias</ItemLista>
-        <ItemLista href="#experience">Serviços</ItemLista>
+        <ItemLista href="#skills">Tecnologias</ItemLista>
+        <ItemLista href="#services">Serviços</ItemLista>
         <ItemLista href="#projects">Projetos</ItemLista>
         <ItemLista href="#contacts">Contato</ItemLista>
         {/* <ItemLista>
@@ -38,8 +38,8 @@ export function Header() {
         {isOpen && (
           <>
             <ItemListaTwo href="#about">Sobre</ItemListaTwo>
-            <ItemListaTwo href="#experience">Tecnologias</ItemListaTwo>
-            <ItemListaTwo href="#tools">Serviços</ItemListaTwo>
+            <ItemListaTwo href="#skills">Tecnologias</ItemListaTwo>
+            <ItemListaTwo href="#services">Serviços</ItemListaTwo>
             <ItemListaTwo href="#projects">Projetos</ItemListaTwo>
             <ItemListaTwo href="#contacts">Contato</ItemListaTwo>
             {/* <ItemListaTwo>

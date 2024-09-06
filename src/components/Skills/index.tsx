@@ -2,7 +2,7 @@ import * as S from "./styles.js";
 
 export function Skills() {
   return (
-    <S.Container id="tools">
+    <S.Container id="skills">
       <S.Title>Tecnologias</S.Title>
       <S.ContainerGeral>
         <S.ContainerOne>
